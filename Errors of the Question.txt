@@ -1,0 +1,9 @@
+Errors Found:
+
+Part 2:
+
+Second example:
+std::string my_string3 = "123 and 456;
+char c3 = my_string3[10]; //c2 = '5'
+
+The comment is wrong, it should be //c3 = '6'
