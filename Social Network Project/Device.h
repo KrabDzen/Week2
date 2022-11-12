@@ -33,9 +33,9 @@ public:
 	void deactivate();
 private:
 	//fields
-	unsigned int id;
-	unsigned int deviceType;
-	std::string os;
-	bool isActive;
+	unsigned int _id;
+	DeviceType _type;
+	std::string _os;
+	bool _active;
 };
 
