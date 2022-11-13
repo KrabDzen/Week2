@@ -1,5 +1,4 @@
 #include "Device.h"
-#include <string>
 
 void Device::init(unsigned int id, DeviceType type, std::string os)
 {

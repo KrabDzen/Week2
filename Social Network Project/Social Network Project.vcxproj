@@ -130,10 +130,12 @@
     <ClCompile Include="Device.cpp" />
     <ClCompile Include="DeviceList.cpp" />
     <ClCompile Include="Social Network Project.cpp" />
+    <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Device.h" />
     <ClInclude Include="DeviceList.h" />
+    <ClInclude Include="User.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
