@@ -4,6 +4,7 @@
 class User
 {
 public:
+	//methods
 	void init(unsigned int id, std::string username, unsigned int age);
 	void clear();
 	unsigned int getID() const;
@@ -14,9 +15,11 @@ public:
 	bool checkIfDevicesAreOn() const;
 
 private:
+	//variables
 	unsigned int _id;
 	std::string _name;
 	unsigned int _age;
+	DevicesList* _devicesList;
 };
 
 
