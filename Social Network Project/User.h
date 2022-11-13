@@ -15,7 +15,7 @@ public:
 	bool checkIfDevicesAreOn() const;
 
 private:
-	//variables
+	//fields
 	unsigned int _id;
 	std::string _name;
 	unsigned int _age;

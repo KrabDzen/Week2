@@ -1,2 +1,8 @@
-﻿  Social Network Project.cpp
+﻿  Device.cpp
+  Social Network Project.cpp
+  test2User.cpp
+C:\Users\test0\source\repos\2nd Year Magshimim Codes\Social Network Project\Social Network Project\test2User.cpp(18,1): warning C4005: 'PURPLE': macro redefinition
+C:\Users\test0\source\repos\2nd Year Magshimim Codes\Social Network Project\Social Network Project\test2User.cpp(12): message : see previous definition of 'PURPLE'
+  User.cpp
+  Generating Code...
   Social Network Project.vcxproj -> C:\Users\test0\source\repos\2nd Year Magshimim Codes\Social Network Project\x64\Debug\Social Network Project.exe
