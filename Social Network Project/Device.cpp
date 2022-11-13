@@ -1,14 +1,14 @@
 #include "Device.h"
 #include <string>
 
-Device Device::init(unsigned int id, DeviceType type, std::string os)
+void Device::init(unsigned int id, DeviceType type, std::string os)
 {
 	this->_id = id;
 	this->_type = type;
 	this->_os = os;
 	this->_active = true;
 }
-unsigned int Device::getid() const
+unsigned int Device::getID() const
 {
 	return this->_id;
 }

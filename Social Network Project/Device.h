@@ -24,8 +24,8 @@ class Device
 {
 public:
 	//methods
-	Device init(unsigned int id, DeviceType type, std::string os);
-	unsigned int getid() const;
+	void init(unsigned int id, DeviceType type, std::string os);
+	unsigned int getID() const;
 	DeviceType getType() const;
 	std::string getOS() const;
 	bool isActive() const;
