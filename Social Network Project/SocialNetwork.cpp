@@ -1,8 +1,10 @@
 #include "SocialNetwork.h"
-#include <iostream>
-#include <ios>
-#include <limits>
 
+/*
+* Function creates a new network with given name and minimal age
+* Input: networkName - a name of a new network, minAge - minimal age user needs to be to sign in this network
+* Output: *NONE*
+*/
 void SocialNetwork::init(std::string networkName, int minAge)
 {
 	_networkName = networkName;
@@ -10,7 +12,11 @@ void SocialNetwork::init(std::string networkName, int minAge)
 	_profilesList = new ProfileList;
 	_profilesList->init();
 }
-
+/*
+* Function clears the whole network
+* Input: *NONE*
+* Output: *NONE*
+*/
 void SocialNetwork::clear()
 {
 	_minAge = 0;
@@ -18,17 +24,29 @@ void SocialNetwork::clear()
 	_profilesList->clear();
 	delete(_profilesList);
 }
-
+/*
+* Function returns the name of the network
+* Input: *NONE*
+* Output: Name of the network
+*/
 std::string SocialNetwork::getNetworkName() const
 {
 	return _networkName;
 }
-
+/*
+* Function returns the minimal age needed to sign in thi ssocial network
+* Input: *NONE*
+* Output: the minimal age of network
+*/
 int SocialNetwork::getMinAge() const
 {
 	return _minAge;
 }
-
+/*
+* Function adds a profile to the social network if the user's age is valid for this network
+* Input: a profile to add to social network
+* Output: False if user's age is below the required minimum for this network and True otherwise
+*/
 bool SocialNetwork::addProfile(Profile profile_to_add)
 {
 	if (profile_to_add.getOwner().getAge() < _minAge)
@@ -38,7 +56,11 @@ bool SocialNetwork::addProfile(Profile profile_to_add)
 	_profilesList->add(profile_to_add);
 	return true;
 }
-
+/*
+* Function returns the list of all the WIndows devices connected to the network
+* Input: *NONE*
+* Output: a string containing id's and OS' of all the Windiws devices conected to the network
+*/
 std::string SocialNetwork::getWindowsDevices() const
 {
 	ProfileNode* temp = _profilesList->get_first();

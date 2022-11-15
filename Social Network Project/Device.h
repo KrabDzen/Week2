@@ -24,11 +24,17 @@ class Device
 {
 public:
 	//methods
+	
+	//Create a new Device with given variables
 	void init(unsigned int id, DeviceType type, const std::string& os);
+
+	//getters
 	unsigned int getID() const;
 	DeviceType getType() const;
 	std::string getOS() const;
 	bool isActive() const;
+
+	//changes the state of _active 
 	void activate();
 	void deactivate();
 private:
