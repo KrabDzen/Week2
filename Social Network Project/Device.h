@@ -24,7 +24,7 @@ class Device
 {
 public:
 	//methods
-	void init(unsigned int id, DeviceType type, std::string os);
+	void init(unsigned int id, DeviceType type, const std::string& os);
 	unsigned int getID() const;
 	DeviceType getType() const;
 	std::string getOS() const;

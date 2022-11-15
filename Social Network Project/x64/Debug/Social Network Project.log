@@ -1,3 +1,3 @@
 ﻿  SocialNetwork.cpp
-C:\Users\test0\source\repos\2nd Year Magshimim Codes\Social Network Project\Social Network Project\SocialNetwork.cpp(31,41): warning C4018: '<': signed/unsigned mismatch
+C:\Users\test0\source\repos\2nd Year Magshimim Codes\Social Network Project\Social Network Project\SocialNetwork.cpp(34,41): warning C4018: '<': signed/unsigned mismatch
   Social Network Project.vcxproj -> C:\Users\test0\source\repos\2nd Year Magshimim Codes\Social Network Project\x64\Debug\Social Network Project.exe

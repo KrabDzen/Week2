@@ -1,6 +1,6 @@
 #include "Device.h"
 
-void Device::init(unsigned int id, DeviceType type, std::string os)
+void Device::init(unsigned int id, DeviceType type, const std::string& os)
 {
 	this->_id = id;
 	this->_type = type;
