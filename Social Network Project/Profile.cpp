@@ -13,7 +13,8 @@ void Profile::init(User owner)
 
 void Profile::clear()
 {
-	_user.clear();
+	//_user.clear(); //This line should work and be included in the code nut for some reason it crashes if I use it
+	//Which is very weird considering I got this function(_user.clear()) prewritten from Magshimim
 	_page->clearPage();
 	_friendsList->clear();
 
@@ -43,7 +44,7 @@ void Profile::addFriend(User friend_to_add)
 
 std::string Profile::getPage() const
 {
-	return "Status: " + _page->getStatus() + "\n*******************\n*******************\n" + _page->getPosts();
+	return "Status: " + _page->getStatus() + "\n*******************\n*******************" + _page->getPosts() + "\n";
 }
 
 std::string Profile::getFriends() const
@@ -78,6 +79,10 @@ std::string Profile::getFriendsWithSameNameLength() const
 		}
 		temp = temp->get_next();
 	}
-	return ret.substr(1, ret.length());//start from 1 because the first index is ','
+	if (ret.length() > 1)
+	{
+		return ret.substr(1, ret.length());//start from 1 because the first index is ','
+	}
+	return "";
 }
 
