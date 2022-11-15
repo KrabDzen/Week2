@@ -484,11 +484,11 @@ bool test3Bonus()
 	std::string got = getProfileString(profile1);
 	cout << got << endl;
 
-	cout <<
-		"Changing all words in the status to \"Magshimim\": ... \n" << endl;
-	profile1.changeAllWordsInStatus("Magshimim");
-	got = getProfileString(profile1);
-	cout << got << endl;
+	//cout <<
+	//	"Changing all words in the status to \"Magshimim\": ... \n" << endl;
+	//profile1.changeAllWordsInStatus("Magshimim");
+	//got = getProfileString(profile1);
+	//cout << got << endl;
 
 	// cutting the status out of the page
 	std::string statusToCheck = profile1.getPage();
@@ -523,11 +523,11 @@ bool test3Bonus()
 	std::string word_to_replace = "you";
 	std::string replacement = "MMMMMMMMMM";
 
-	cout <<
-		"Changing the word \"" << word_to_replace << "\" in the status to \"" << replacement << "\": ... \n" << endl;
-	profile2.changeWordInStatus(word_to_replace, "MMMMMMMMMM");
-	got = getProfileString(profile2);
-	cout << got << endl;
+	//cout <<
+	//	"Changing the word \"" << word_to_replace << "\" in the status to \"" << replacement << "\": ... \n" << endl;
+	//profile2.changeWordInStatus(word_to_replace, "MMMMMMMMMM");
+	//got = getProfileString(profile2);
+	//cout << got << endl;
 
 	// cutting the status out of the page
 	statusToCheck = profile2.getPage();
